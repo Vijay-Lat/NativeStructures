@@ -1,3 +1,5 @@
+import linkedList.LinkedList;
+
 class Main {
     public static void main(String[] args){
         int num1 = 11;
@@ -9,5 +11,6 @@ class Main {
         System.out.println(items);
         Cookie cookie = new Cookie("green");
         System.out.println(cookie.getColor());
+       
     }
 }
