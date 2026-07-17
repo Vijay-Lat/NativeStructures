@@ -1,3 +1,4 @@
+package linkedList;
 class Node {
     int value;
     Node next;
