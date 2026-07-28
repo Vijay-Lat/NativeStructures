@@ -11,19 +11,24 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 
+        UnionFind setArray = new UnionFind(10);
+        System.out.println(setArray.isConnected(8,2));
+
         Point p1 = new Point(3, 4);
         Point p2 = new Point(3, 4);
 
-        System.out.println(p1.distance(p2));
 
-        System.out.println(g());
+
+        // System.out.println(p1.distance(p2));
+
+        // System.out.println(g());
         try {
             List<String> allLines = Files.readAllLines(Paths.get("JAVA_DUKE/helloWorld.txt"));
 
             for (int i = 0; i < allLines.size(); i++) {
                 // Crucial part: You must use .get(i) for a List!
                 String line = allLines.get(i);
-                System.out.println(line);
+                // System.out.println(line);
             }
 
         } catch (IOException e) {
