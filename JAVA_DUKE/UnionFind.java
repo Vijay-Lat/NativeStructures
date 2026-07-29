@@ -5,6 +5,9 @@ public class UnionFind {
 
     public UnionFind(int n) {
         intAtt = new int[n];
+        for(int i=0;i<intAtt.length;i++){
+            intAtt[i] = i;
+        }
     }
 
     public boolean isConnected(int fId, int sId) {
@@ -21,12 +24,13 @@ public class UnionFind {
     public void union(int firstIndex, int secondIndex) {
         for (int i = 0; i < intAtt.length; i++) {
             var firstIndexValue = intAtt[firstIndex];
+            var secondIndexValue = intAtt[secondIndex];
             var isConnected = isConnected(firstIndex,secondIndex);
             if(isConnected){
 System.out.println(intAtt);
             }
-           else if (i == secondIndex) {
-                intAtt[i] = firstIndexValue;
+           else if (intAtt[i] == firstIndexValue) {
+                intAtt[i] = secondIndexValue;
             }
 
         }
