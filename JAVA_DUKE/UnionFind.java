@@ -14,8 +14,8 @@ public class UnionFind {
         // for (int i = 0; i < intAtt.length; i++) {
         var a = intAtt[fId];
         var b = intAtt[sId];
-        System.out.println(a + "a");
-        System.out.println(b + "b");
+        System.out.println(a + "-a");
+        System.out.println(b + "-b");
 
         return a == b;
         // }
