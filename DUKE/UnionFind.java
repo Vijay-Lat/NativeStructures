@@ -1,11 +1,11 @@
-package JAVA_DUKE;
 
 public class UnionFind {
+
     private int[] intAtt;
 
     public UnionFind(int n) {
         intAtt = new int[n];
-        for(int i=0;i<intAtt.length;i++){
+        for (int i = 0; i < intAtt.length; i++) {
             intAtt[i] = i;
         }
     }
@@ -14,9 +14,6 @@ public class UnionFind {
         // for (int i = 0; i < intAtt.length; i++) {
         var a = intAtt[fId];
         var b = intAtt[sId];
-        System.out.println(a + "-a");
-        System.out.println(b + "-b");
-
         return a == b;
         // }
     }
@@ -25,11 +22,10 @@ public class UnionFind {
         for (int i = 0; i < intAtt.length; i++) {
             var firstIndexValue = intAtt[firstIndex];
             var secondIndexValue = intAtt[secondIndex];
-            var isConnected = isConnected(firstIndex,secondIndex);
-            if(isConnected){
-System.out.println(intAtt);
-            }
-           else if (intAtt[i] == firstIndexValue) {
+            var isConnected = isConnected(firstIndex, secondIndex);
+            if (isConnected) {
+                // System.out.println(Arrays.toString(intAtt));
+            } else if (intAtt[i] == firstIndexValue) {
                 intAtt[i] = secondIndexValue;
             }
 
