@@ -1,4 +1,3 @@
-package JAVA_DUKE;
 
 
 public class PerimeterRunner {
