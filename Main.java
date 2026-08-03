@@ -4,9 +4,16 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+import javax.print.DocFlavor.STRING;
+
 public class Main {
 
     public static void main(String[] args) {
+   String dna = "AAAATGGCTTRSTTTATAARST";
+   String gene = new FindGene().findGeneString(dna);
+   System.out.println("This is our gene"+" "+gene);
+
+
 
         UnionFind setArray = new UnionFind(10);
         setArray.union(2, 5);
